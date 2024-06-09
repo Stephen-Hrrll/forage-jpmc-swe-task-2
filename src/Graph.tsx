@@ -41,8 +41,8 @@ class Graph extends Component<IProps, {}> {
       timestamp: 'date',
     };
 
-    elem.setAttribute('view', 'y_line');
-    elem.setAttribute('column-pivots', '["stock"]');
+    elem.setAttribute('view', 'y_line');// the kind of graph to view
+    elem.setAttribute('column-pivots', '["stock"]'); // the column to pivot
     elem.setAttribute('row-pivots', '["timestamp"]');
     elem.setAttribute('columns', '["top_ask_price"]');
     elem.setAttribute('aggregates', `
